@@ -1,12 +1,23 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Navbar from "./Navbar/Navbar";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Services from "./components/Services";
+import Home from "./components/Home";
 
 function App() {
     return (
         <div className="App">
-            <header className="App-header">
-                <h1>Nhill Thai Massage</h1>
-            </header>
+            <BrowserRouter>
+                <Navbar />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/services" element={<Services />} />
+                </Routes>
+            </BrowserRouter>
         </div>
     );
 }

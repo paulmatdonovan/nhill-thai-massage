@@ -1,0 +1,108 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-around;
+    background-color: #6b5b95;
+    color: #feb236;
+    /* width: 100vw; */
+}
+
+.navbar .logo {
+    width: 5rem;
+    height: 5rem;
+    padding: 15px;
+}
+
+.nav ul li:visited {
+    text-decoration: none;
+}
+
+.navbar ul {
+    display: flex;
+    font-size: 1.7rem;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+    list-style: none;
+    cursor: pointer;
+}
+
+.navbar h1 {
+    font-size: 2.7rem;
+}
+
+a {
+    text-decoration: none;
+    color: #feb236;
+}
+
+a:hover {
+    background-color: #382862;
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        display: block;
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+    }
+
+    .navbar logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar ul {
+        display: block;
+        text-align: center;
+        font-size: 1.3rem;
+        margin: 15px;
+        padding: 25px;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .navbar {
+        display: block;
+        text-align: center;
+    }
+
+    .navbar logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar ul {
+        display: block;
+        text-align: center;
+        margin: auto;
+        padding: 25px;
+    }
+
+    .navbar ul li {
+        margin: 20px;
+        padding: 0;
+        font-size: 2em;
+    }
+
+    a:hover {
+        background-color: #382862;
+        padding: 5px 3px;
+        border-radius: 8px;
+    }
+}
